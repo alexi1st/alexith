@@ -4,11 +4,12 @@ body {
     background-blend-mode: lighten;
     background-repeat: repeat;
     color: white;
-    margin: 5;
+    margin: 5px;
     font-family: system-ui;
 }
 
 h1 {
     font-size: 70px;
     font-weight: 500;
+    margin: 10px;
 }
