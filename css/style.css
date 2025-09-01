@@ -9,13 +9,14 @@ body {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 45px;
     font-weight: 500;
     margin: 10px;
 }
 
 .header {
-    padding: 60px;
+    padding: 30px;
+    margin: 0;
     text-align: left;
     background: rgb(217, 98, 130)
 }
