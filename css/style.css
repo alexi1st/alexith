@@ -1,11 +1,8 @@
 body {
     background-color: #d3fdc7;
     background-image: url("../img/wobble.jpg");
+    background-repeat: repeat;
     color: white;
     margin: 5;
     font-family: system-ui;
-}
-
-h1 {
-    margin: 2
 }
