@@ -1,3 +1,4 @@
+/* background */
 body {
     background-color: rgb(234, 160, 180);
     background-image: url("../img/wavecut.png");
@@ -8,17 +9,24 @@ body {
     font-family: "Tahoma";
 }
 
+/* header */
 .name {
     font-size: 45px;
     font-weight: 500;
-    vertical-align: baseline;
+    vertical-align: middle;
 }
 
+.logo {
+    vertical-align: middle
+}
 
 .header {
     padding: 10px;
-    margin: 0px;
     text-align: left;
     background: rgb(217, 98, 130);
     vertical-align: baseline;
+}
+
+.articles {
+    margin-left: 20px;
 }
