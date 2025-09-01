@@ -13,3 +13,7 @@ h1 {
     font-weight: 500;
     margin: 10px;
 }
+
+.header {
+    padding: 60px;
+}
