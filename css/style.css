@@ -1,6 +1,7 @@
 body {
     background-color: #ffa5a8ff;
     background-image: url("../img/wavecut.png");
+    background-blend-mode: overlay;
     background-repeat: repeat;
     color: white;
     margin: 5;
