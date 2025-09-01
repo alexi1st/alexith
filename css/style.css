@@ -1,5 +1,7 @@
 body {
-    background: #d3fdc7;
+    background-color: #d3fdc7;
+    background-image: url("../img/wobble.jpg");
+    color: white;
     margin: 5;
     font-family: system-ui;
 }
