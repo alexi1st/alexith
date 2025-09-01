@@ -1,4 +1,9 @@
 body {
     background: #d3fdc7;
+    margin: 5;
     font-family: system-ui;
+}
+
+h1 {
+    margin: 2
 }
