@@ -13,13 +13,11 @@ body {
 .name {
     font-size: 45px;
     font-weight: 800;
-    box-align: left;
     padding: 10px;
 }
 
 .logo {
     padding: 10px;
-    box-align: left;
 }
 
 .header {
