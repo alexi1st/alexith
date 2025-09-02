@@ -12,7 +12,7 @@ body {
 /* header */
 .name {
     font-size: 45px;
-    font-weight: 800px;
+    font-weight: 800;
     box-align: left;
 }
 
@@ -34,5 +34,5 @@ body {
 }
 
 .category {
-    font-weight: 400px;
+    font-weight: 400;
 }
