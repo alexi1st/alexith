@@ -12,12 +12,12 @@ body {
 /* header */
 .name {
     font-size: 45px;
-    font-weight: 500;
-    vertical-align: left;
+    font-weight: 800px;
+    box-align: left;
 }
 
 .logo {
-    vertical-align: left
+    box-align: left;
 }
 
 .header {
@@ -28,6 +28,11 @@ body {
     height: 120px;
 }
 
+/* articles */
 .articles {
     margin-left: 25px;
+}
+
+.category {
+    font-weight: 400px;
 }
