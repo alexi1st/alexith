@@ -1,8 +1,13 @@
 /* background */
+
+html {
+    overflow-y:scroll;
+}
 body {
     background-color: rgb(234, 160, 180);
     background-image: url("../img/wavecut.png");
     background-blend-mode: lighten;
+    background-size:150px;
     background-repeat: repeat;
     color: white;
     margin: 0px;
@@ -10,32 +15,97 @@ body {
 }
 
 /* header */
+h1 {
+    padding-left:30px;
+    display:flex;
+    align-items:center;
+    margin-top:0px;
+    margin-bottom:0px;
+    text-decoration:none;
+}
+
 .name {
-    font-size: 45px;
-    font-weight: 800;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 65px;
+    font-weight: 100;
+    color:rgb(188, 26, 77);
+    text-align:middle;
+    text-decoration:none;
 }
 
 h1::before {
+    content: "";
+    display: inline-block;
     width: 100px;
     height: 100px;
     background-image: url("../img/BOWL STICKU.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position:bottom;
+    margin-right:20px;
+    margin-top:0px;
 }
 
 .header {
+    display:flex;
     padding: 15px;
-    text-align: left;
     background: rgb(217, 98, 130);
+    background-image:url("../img/gray-floral.png");
+    background-blend-mode:color-burn;
+    background-repeat:repeat;
+    background-size:250px;
     vertical-align: baseline;
-    height: 120px;
+    height: 100px;
+    justify-content:space-between;
 }
 
-/* articles */
-.articles {
+/*navigation bar*/
+
+.home {
+    text-decoration:none;
+}
+
+.navbar {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    float:right;
+    padding-right:30px;
+}
+
+ul li {
+    margin-top:35px;
+    font-family:'Roboto';
+    font-size:30px;
+    float:right;
+    gap:30px;
+    text-decoration:none;
+    margin-right:65px;
+}
+
+
+li a{
+    display:block;
+    color:pink;
+    padding:0px 10px;
+    text-decoration:none;
+    letter-spacing:1px;
+}
+
+li:hover{
+    background-color:rgb(208, 70, 109);
+    color:rgb(236, 178, 193);
+}
+
+
+/* blogs */
+.blog {
     margin-left: 25px;
 }
 
 .category {
-    font-weight: 300;
+    font-family:'Roboto';
+    font-weight:500;
+    letter-spacing:2px;
 }
