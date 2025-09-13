@@ -25,9 +25,9 @@ h1 {
 }
 
 .name {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Poppins', 'Montserrat', 'Impact', sans-serif;
     font-size: 65px;
-    font-weight: 100;
+    font-weight: 800;
     color:rgb(188, 26, 77);
     text-align:middle;
     text-decoration:none;
@@ -76,7 +76,7 @@ h1::before {
 
 ul li {
     margin-top:35px;
-    font-family:'Roboto';
+    font-family:'Poppins', 'Montserrat', 'Roboto';
     font-size:30px;
     float:right;
     gap:30px;
@@ -94,7 +94,8 @@ li a{
 }
 
 li:hover{
-    background-color:#d0466d;
+    background-color:#c2375c;
+    border-radius:50px;
     color:rgb(236, 178, 193);
 }
 
