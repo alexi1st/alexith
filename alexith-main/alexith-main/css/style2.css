@@ -1,0 +1,352 @@
+/* background */
+
+html {
+    overflow-y:scroll;
+}
+body {
+    background-color: #eaa0b4;
+    background-image: url("../img/wavecut.png");
+    background-blend-mode: lighten;
+    background-size:150px;
+    background-repeat: repeat;
+    color: white;
+    margin: 0px;
+    font-family: "Tahoma";
+}
+
+/* header */
+h1 {
+    padding-left:30px;
+    display:flex;
+    align-items:center;
+    margin-top:0px;
+    margin-bottom:0px;
+    text-decoration:none;
+}
+
+.name {
+    font-family:'Poppins', 'Montserrat', 'Impact', sans-serif;
+    font-size: 65px;
+    font-weight: 800;
+    color:rgb(188, 26, 77);
+    text-align:middle;
+    text-decoration:none;
+}
+
+h1::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/BOWL STICKU.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:bottom;
+    margin-right:20px;
+    margin-top:0px;
+}
+
+.header {
+    display:flex;
+    padding: 15px;
+    background: #d96282;
+    background-image:url("../img/gray-floral.png");
+    background-blend-mode:color-burn;
+    background-repeat:repeat;
+    background-size:250px;
+    vertical-align: baseline;
+    height: 100px;
+    justify-content:space-between;
+}
+
+/*navigation bar*/
+
+.home {
+    text-decoration:none;
+}
+
+.navbar {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    float:right;
+    padding-right:30px;
+}
+
+ul li {
+    margin-top:35px;
+    font-family:'Poppins', 'Montserrat', 'Roboto';
+    font-size:30px;
+    float:right;
+    gap:30px;
+    text-decoration:none;
+    margin-right:65px;
+}
+
+
+li a{
+    display:block;
+    color:pink;
+    padding:0px 10px;
+    text-decoration:none;
+    letter-spacing:1px;
+}
+
+li:hover{
+    background-color:#c2375c;
+    border-radius:50px;
+    color:rgb(236, 178, 193);
+}
+
+/*
+==================================================
+--------------------------------------------------
+                  END OF HEADER
+--------------------------------------------------
+==================================================
+*/
+
+ /*~~~~~~~~~~~~~~~~~~~~~~~~
+ about me ish
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.page {
+    display:flex;
+    gap:20px;
+    text-align:justify;
+    margin:100px;
+    margin-left:150px;
+}
+
+.desc {
+    margin-left:100px;
+    margin-right:100px;
+}
+
+h2 {
+    font-size:45px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+p {
+    font-size: px;
+}
+
+ /*~~~~~~~~~~~~~~~~~~~~~~~~
+blog homescreen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.blogposts {
+    margin: 40px 75px 25px 75px;
+}
+
+.blogtitle {
+    font-size:40px;
+    font-family: 'Roboto', 'Tahoma','Arial', serif;
+    letter-spacing:1px;
+    font-weight:400;
+    margin-bottom: 20px;
+}
+
+
+.artdirect {
+    text-decoration:none;
+    color:inherit;
+    display:block;
+}
+
+.date {
+    margin: 1px 0px 5px 0px;
+}
+
+.blogdisplay {
+    display:flex;
+    gap:50px;
+    align-content:center;
+    flex-wrap:wrap;
+}
+
+.artimg {
+    margin-bottom:0px;
+    border-radius:10px;
+}
+
+.bloginfo {
+    font-family: 'Roboto';
+    font-weight:100px;
+    background-color:#d0466d;
+    color:#ffd9e4;
+    border-radius:20px;
+    width:300px;
+    height:auto;
+    padding:20px;
+}
+
+.bloginfo:hover {
+    font-family: 'Roboto';
+    font-weight:100px;
+    background-color:transparent;
+    border-radius:18px;
+    border:3px solid #d0466d;
+    color:#b92451;
+    width:295px;
+    height:auto;
+    padding:20px;
+}
+
+.arttitle {
+    font-size:21px;
+    margin-top:7px;
+    margin-bottom: 2px;
+}
+
+.artdesc {
+    font-size:15px;
+    margin: 8px 0px 8px 0px;
+}
+
+ul.categories {
+    list-style: none;
+    display:flex;
+    margin:0;
+    justify-content:center;
+    gap:7px;
+    padding:0px;
+    flex-wrap:wrap;
+}
+
+.categories li {
+    font-family: 'Roboto';
+    font-size:18px;
+    margin:5px;
+    padding: 2px 7px 2px 7px;
+    background-color:#a30d3a;
+    color:#fcc6d5;
+    border-radius:25px;
+}
+
+.categories li:hover {
+    font-family: 'Roboto';
+    font-size:18px;
+    color:#a30d3a;
+    margin:5px;
+    border:2px solid #a30d3a;
+    border-radius:25px;
+    background-color: #d0466d;
+    padding:0px 7px 0px 7px;
+}
+
+ /*~~~~~~~~~~~~~~~~~~~~~~~~
+blog post formatting
+~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.back {
+    margin:0px 0px 25px 0px;
+    padding:0px;
+    text-decoration:none;
+    color:#d0466d;
+}
+
+.back:hover {
+    color: #d0466d;
+    background-color:#ffeff3;
+    width:115px;
+}
+
+.backlink {
+    text-decoration:none;
+    color:#d0466d;
+}
+
+.blog {
+    margin: 25px 105px 50px 115px;
+}
+
+.titledisplay {
+    font-family: 'Roboto';
+    font-weight:500px;
+    background-color:#d0466d;
+    background-image:url(../img/swirl.png);
+    background-repeat:repeat;
+    padding:15px;
+    line-height:0.9;
+    color:#ffebf0;
+}
+
+.infobar {
+    display:flex;
+    justify-content:space-between;
+    background-color:#e27391;
+    padding:5px 10px 5px 10px;
+    color:#ffdce5;
+    letter-spacing:1px;
+    font-family:'Roboto';
+}
+
+.a-date {
+    font-size:18px;
+}
+
+.a-genre {
+    font-size:18px;
+}
+
+article {
+    font-family: 'Roboto';
+    font-size:18px;
+    text-align:justify;
+    margin: 0px 20px 0px 20px;
+    color:#94062f;
+}
+
+.artsec img.img-right {
+    margin-left:24px;
+    margin-bottom:12px;
+    float:right;
+    border-radius: 15px;
+}
+
+.artsec img.img-left {
+    margin-right:24px;
+    margin-bottom:12px;
+    float:left;
+    border-radius:15px;
+}
+
+.artsec p{
+    line-height:1.2;
+    margin: 20px 0px 20px 0px;
+}
+
+.a-header {
+    margin-bottom:2px;
+}
+
+.img-cap-r {
+    width: 350px;
+    float:right;
+    margin-bottom:10px;
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    font-size:15px;
+    color:#b6284c;
+}
+
+.img-cap-l {
+    width:450px;
+    text-wrap:inherit;
+    margin:20px 40px 20px 0px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    float:left;
+    font-size:15px;
+    color:#b6284c;
+    align-items:center;
+    text-align:center;
+    padding:0px 40px 0px 0px;
+}
