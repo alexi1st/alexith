@@ -2,7 +2,13 @@
 
 html {
     overflow-y:scroll;
+    cursor: url("../img/fruit/straw.png"), auto;
 }
+
+a {
+    cursor: url("../img/fruit/straw.png"), auto;
+}
+
 body {
     background-color: rgb(234, 160, 180);
     background-image: url("../img/wavecut.png");
@@ -28,7 +34,7 @@ h1 {
     font-family:'Poppins', 'Montserrat', 'Impact', sans-serif;
     font-size: 65px;
     font-weight: 800;
-    color:rgb(188, 26, 77);
+    color:#bc1a4d;
     text-align:middle;
     text-decoration:none;
 }
@@ -57,6 +63,7 @@ h1::before {
     vertical-align: baseline;
     height: 100px;
     justify-content:space-between;
+
 }
 
 /*navigation bar*/
@@ -87,15 +94,17 @@ h1::before {
 
 .navbar li a{
     display:block;
-    color:pink;
+    color:rgb(251, 173, 190);
     padding:0px 10px;
     text-decoration:none;
     letter-spacing:1px;
+    font-weight:500;
 }
 
 .navbar li:hover{
-    background-color:rgb(208, 70, 109);
+    background-color:rgba(199, 51, 93, 0.711);
     color:rgb(236, 178, 193);
+    border-radius:45px;
 }
 
 /* =====================================
@@ -105,7 +114,7 @@ h1::before {
 .hero {
     margin:0;
     background-image:url(../img/bear3.png);
-    background-blend-mode:multiply;
+    background-blend-mode:none;
     background-repeat:no-repeat;
     background-size:cover;
     background-position-y:bottom;
@@ -116,23 +125,32 @@ h1::before {
     text-wrap:inherit;
     color:black;
     clip-path:ellipse(120% 90% at 50% 10%);
+    box-shadow: 0px 7px 20px -15px rgb(25, 23, 151) inset;
+}
+
+.rating {
+    margin-top:80px;
 }
 
 .hero-header {
-    font-family: 'Roboto';
-    font-size: 62px;
+    font-family: 'Belanosima', 'Montserrat', 'Roboto';
+    font-size: 4.25em;
     font-weight:600;
-    color:#82cb6e;
-    width:660px;
-    margin:115px auto 0px 0px;
+    color:#b0f19e;
+    text-shadow: 2px 2px 5px rgba(43, 41, 41, 0.508);
+    width:675px;
+    margin:5px auto 0px 0px;
     line-height:69px;
 }
 
 .hero-p {
     font-family:'Montserrat';
-    color:#ffffff;
+    font-weight:500;
+    letter-spacing:1px;
+    text-shadow: 1px 2px 4px rgb(18, 51, 18);
+    color:#fff9f9;
     width:800px;
-    font-size:20px;
+    font-size:18px;
     margin-top:12px;
 }
 
@@ -148,12 +166,12 @@ h1::before {
 .hero-button {
     font-family: 'Montserrat', 'Roboto';
     text-align:center;
-    background-color:#90ee90;
+    background: #b0f19e;
     text-decoration:none;
     text-wrap:inherit;
     width:225px;
     height:35px;
-    margin-top:45px;
+    margin-top:40px;
     padding: 10px 20px;
     align-content:center;
     border-radius: 50px;
@@ -162,15 +180,24 @@ h1::before {
 .hero-button p {
     margin:0px;
     font-size:20px;
-    font-weight:400;
+    font-weight:600;
 }
 
 .hero a {
     text-decoration:none;
-    color:#276105;
+    color:#32720d;
+    width:225px;
+    height:35px;
 }
 
 .hero a :hover {
     background-color:#2dcccc;
     color:rgb(36, 110, 147);
+}
+
+/* ============= below ================ */
+
+.below {
+    margin: 50px 75px 20px 75px;
+    height: 900px;
 }
