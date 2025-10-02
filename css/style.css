@@ -55,7 +55,7 @@ h1::before {
 .header {
     display:flex;
     padding: 15px;
-    background: rgb(217, 98, 130);
+    background: #d96282;
     background-image:url("../img/gray-floral.png");
     background-blend-mode:color-burn;
     background-repeat:repeat;
@@ -105,6 +105,7 @@ h1::before {
     background-color:rgba(199, 51, 93, 0.711);
     color:rgb(236, 178, 193);
     border-radius:45px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 /* =====================================
@@ -196,8 +197,65 @@ h1::before {
 }
 
 /* ============= below ================ */
-
 .below {
-    margin: 50px 75px 20px 75px;
-    height: 900px;
+    height:900px;
+}
+
+.bear {
+    margin: 0px 75px 20px 75px;
+    justify-content: center;
+    display:flex;
+    flex-wrap:nowrap;
+    gap:16rem;
+}
+
+h3 {
+    font-family: 'Montserrat';
+    margin-top:15px;
+    color:#db4b78;
+    margin-bottom:30px;
+    justify-self: center;
+}
+
+.below h2 {
+    font-family: 'Poppins';
+    font-size:60px;;
+    font-weight:800px;
+    color:#bc1a4d;
+    margin-top:15px;
+    margin-bottom:0px;
+    justify-self: center;
+}
+
+.below p {
+    font-size:16px;
+    font-family:'Montserrat', sans-serif;
+    font-weight:500;
+    color:#db4b78;
+    justify-self:center;
+    text-align:center;
+    margin-bottom:40px;
+    margin-top:0px;
+}
+
+.bears {
+    margin-bottom:0px;
+    max-width:170px;
+    height:auto;
+}
+
+.bear-button {
+    flex-direction:column;
+    justify-content:center;
+}
+
+.bear-button h2 {
+    font-size:40px;
+    justify-self:center;
+    margin-top:5px;
+}
+
+.bear-button img:hover{
+    transform: rotate(-2deg) translateY(-7px);
+    transition: transform 0.4s ease;
 }

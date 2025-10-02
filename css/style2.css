@@ -104,6 +104,7 @@ li a{
     background-color:rgba(199, 51, 93, 0.711);
     color:rgb(236, 178, 193);
     border-radius:45px;
+    transition: background-color 0.3s ease;
 }
 
 /*
@@ -132,29 +133,71 @@ li a{
 }
 
 h2 {
-    font-size:45px;
+    font-family: 'Poppins', 'Montserrat', 'Impact';
+    font-weight:400px;
+    font-size:60px;
     margin-top:0px;
     margin-bottom:0px;
 }
 
 p {
-    font-size: px;
+    margin: 0px;
+    font-size: 16px;
 }
 
+.container {
+    display:grid;
+    grid-template-rows:100px 100px 100px 100px 100px;
+    grid-template-columns:100px 100px 100px 100px 100px 1.25fr;
+    grid-auto-rows: 100px;
+}
+
+.item-1 {
+    grid-area: 1 / 1 / 6 / 6;
+    background-color:transparent;
+    align-content: space-around;
+    justify-self: center;
+    padding-left:15px;
+}
+
+.item-1 img {
+    border-radius:250px;
+    margin-top:20px;
+    box-shadow: 2px 2px 7px rgba(199, 51, 93, 0.536);
+}
+
+.item-2 {
+    padding:50px 45px;
+    grid-area: 1 / 6 / 6 / -1;
+    background-color:transparent;
+}
+
+.item-3 {
+    grid-area: 1 / 1/ 6 / -1;
+    background-color:transparent;
+}
+
+.item-4 {
+    grid-area: 2 / 5 / 3 / -2;
+    justify-self:left;
+}
+
+.item-5 {
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self:right;
+}
+
+.item-6 {
+    grid-area: 5 / 4 / 6 / 5;
+    justify-self:right;
+    align-content:center;
+}
  /*~~~~~~~~~~~~~~~~~~~~~~~~
 blog homescreen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .full {
     display:flex;
-}
-
-.sidenav {
-    background-color:white;
-    width:300px;
-    height:800px;
-    display:flex;
-    float:left;
 }
 
 .blogposts {
@@ -212,6 +255,8 @@ blog homescreen
     width:295px;
     height:auto;
     padding:20px;
+    transform: rotate(1deg) translateY(-10px);
+    transition:transform 0.3s ease;
 }
 
 .arttitle {
@@ -243,9 +288,10 @@ ul.categories {
 
 .categories li {
     font-family: 'Montserrat','Roboto';
-    font-size:18px;
+    font-size:17px;
     margin:5px;
-    padding: 2px 7px 2px 7px;
+    padding: 1px 5px;
+    gap:7px;
     background-color:#a30d3a;
     color:#fcc6d5;
     border-radius:25px;
@@ -259,7 +305,7 @@ ul.categories {
     border:2px solid #a30d3a;
     border-radius:25px;
     background-color: #d0466d;
-    padding:0px 7px 0px 7px;
+    padding: 0 2px;
 }
 
  /*~~~~~~~~~~~~~~~~~~~~~~~~
@@ -604,4 +650,252 @@ article {
     align-items:center;
     text-align:center;
     padding:0px 40px 0px 0px;
+}
+
+/* ============================================
+===============================================
+                    gallery
+===============================================
+=============================================*/
+
+ .gallery {
+    position:relative;
+    justify-content:center;
+    margin-top:60px;
+    margin-bottom:60px;
+    display:grid;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-auto-rows: 100px;
+}
+
+.gal-1 {
+    grid-area: 1 / 1 / -1 / -1;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/cork-board.png");
+    background-repeat:repeat;
+    background-size:500px;
+    background-blend-mode:multiply;
+    background-color:#ffd7c6;
+    border-radius: 35px;
+    border: 25px solid rgb(121, 64, 43);
+    box-shadow:
+    -5px -5px 1px rgb(168, 85, 55),
+    inset -5px -4px 1px rgb(168, 85, 55),
+    inset -4px -4px 6px rgba(66, 38, 19, 0.748),
+    6px 6px 1px rgb(79, 41, 28), 
+    inset 6px 6px 2px rgb(79, 41, 28),
+    5px 5px 10px rgba(109, 24, 24, 0.748),
+    6px 6px 4px rgba(76, 44, 22, 0.748) inset;
+}
+
+.gal-7 {
+    grid-area: 4/ 8 / 6 / 10;
+    justify-self:flex-end;
+    align-self:end;
+    box-shadow:1px 1px 6px rgba(52, 29, 22, 0.69);
+    transform: rotate(3deg) translateX(19px);
+    z-index:9;
+}
+
+.gal-2 {
+    z-index:8;
+    grid-area: 2 /5 /5 / 8;
+    justify-self:right;
+    align-content:baseline;
+    transform: rotate(4deg);
+    box-shadow:1px 1px 4px rgb(52, 29, 22);
+}
+
+.gal-3 {
+    z-index:6;
+    grid-area: 5 / 2 / 8 / 5;
+    box-shadow:1px 1px 4px rgb(52, 29, 22);
+    transform: rotate(2deg);
+    position:absolute;
+    right:75px;
+}
+
+.gal:hover{
+    transform: rotate(0deg) scale(1.35);
+    transition: transform 0.3s ease;
+    z-index:15;
+}
+
+.gal-4 {
+    z-index:8;
+    grid-area: 5 / 6 / 8 / 9;
+    justify-self: start;
+    align-self:center;
+    transform: rotate(-4deg) translateY(52px);
+    position:absolute;
+    left:45px;
+    box-shadow:1px 1px 4px rgb(52, 29, 22);
+}
+
+.gal-5 {
+    z-index:7;
+    grid-area: 2 / 2 / 5 / 4;
+    transform: rotate(-2deg);
+    box-shadow:1px 1px 4px rgb(52, 29, 22);
+}
+
+.gal-6 {
+    z-index:5;
+    grid-area: 2 / 10 / 5 / 12;
+    box-shadow:1px 1px 6px rgba(52, 29, 22, 0.69);
+    transform: translateY(-5px)rotate(-2deg);
+}
+
+.gal-8 {
+    z-index:3;
+    border-radius:150px;
+    box-shadow:1px 1px 6px rgba(52, 29, 22, 0.69);    
+    grid-area: 6 / 4 / 8 / 6;
+    position:absolute;
+    top:50px;
+    left:40px;
+}
+
+.gal-9 {
+    z-index:7;
+    grid-area: 6 / 10 / 8 / 12;
+    position:absolute;
+    left:35px;
+    bottom:40px;
+    transform:rotate(5deg);
+}
+
+.gal-10 {
+    z-index:8;
+    grid-area: 4 / 4 / 6 / 6;
+    background-color:rgb(255, 203, 219);
+    padding-top:50px;
+    width: 150px;
+    height:115px;
+    box-shadow:1px 1px 6px rgba(52, 29, 22, 0.69);
+    color:black;
+    text-align:center;
+    font-family:'Times New Roman', serif;
+    transform: rotate(-6deg);
+}
+
+.gal-11 {
+    font-family:cursive;
+    line-height: 18px;
+    z-index:8;
+    grid-area: 8 / 11 / 9 / 13;
+    color:rgb(43, 42, 42);
+    background-color: rgb(249, 249, 249);
+    background-image: url("https://www.transparenttextures.com/patterns/lined-paper.png");
+    background-size: 375px;
+    padding-top:40px;
+    padding: 35px 25px 40px 25px;
+    height: 180px;
+    width: 160px;
+    text-align: left;
+    box-shadow:1px 1px 6px rgba(52, 29, 22, 0.69);
+    transform: rotate(-1deg) translateY(-27px);
+
+}
+
+.gal-12 {
+    z-index:7;
+    grid-area: 2 / 9 / 3 / 10;
+    position:absolute;
+    right:20px;
+    top:10px;
+}
+
+/* inner tack grid */
+
+.tack-grid {
+    position:relative;
+    grid-area: 2 / 2 / 8 / 13;
+    display:grid;
+    grid-template-rows: repeat(12, 50px);
+    grid-template-columns: repeat(23, 50px);
+}
+
+.tack-1 {
+    z-index:10;
+    grid-area: 1 / 2 / 2 / 3;
+    position:absolute;
+    left:23px;
+    bottom:10px;
+}
+
+.tack-2 {
+    z-index:10;
+    grid-area: 1 / 10 / 2 / 11;
+    position:absolute;
+    bottom:10px;
+    right:30px;
+}
+
+.tack-3 {
+    z-index:10;
+    grid-area: 1 / 19 / 2 / 20;
+    position:absolute;
+    bottom: 8px;
+    right:3px;
+}
+
+.tack-4 {
+    z-index:10;
+    grid-area: 7 / 3 / 7 / 4;
+    position:absolute;
+    bottom: 17px;
+    right:3px;
+}
+
+.tack-5 {
+    z-index:10;
+    grid-area: 8 / 12 / 8 / 13;
+    position:absolute;
+    top:9px;
+    left:28px;
+}
+
+.tack-6 {
+    z-index:10;
+    grid-area: 6 / 16 / 6 / 17;
+    position:absolute;
+    bottom: 15px;
+    right:22px;
+}
+
+.tack-7 {
+    z-index:10;
+    grid-area: 12 / 21 / 13 / 22;
+    justify-self:flex-end;
+    position:absolute;
+    top:12px;
+    right:26px;
+}
+
+.tack-8 {
+    z-index:10;
+    grid-area: 5 / 6 / 6 / 7;
+    position:absolute;
+    bottom:10px;
+    right:5px;
+}
+
+.tack-9 {
+    z-index:10;
+    grid-area: 2 / 23 / 3 / 24;
+    position:absolute;
+    right:10px; 
+}
+
+.tack-10 {
+    z-index:10;
+    grid-area: 7 / 10 / 8 / 11;
+}
+
+.tack-11 {
+    z-index:10;
+    grid-area: 2 / 14 / 3 / 15;
+    justify-self:flex-end;
+    position:absolute;
 }
