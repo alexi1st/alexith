@@ -32,7 +32,7 @@ h1 {
 
 .name {
     font-family:'Poppins', 'Montserrat', 'Impact', sans-serif;
-    font-size: 65px;
+    font-size: 55px;
     font-weight: 800;
     color:#bc1a4d;
     text-align:middle;
@@ -42,8 +42,8 @@ h1 {
 h1::before {
     content: "";
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     background-image: url("../img/BOWL STICKU.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -61,8 +61,10 @@ h1::before {
     background-repeat:repeat;
     background-size:250px;
     vertical-align: baseline;
-    height: 100px;
+    height: 75px;
     justify-content:space-between;
+    z-index:3;
+    animation: hero 1s ease-in-out;
 
 }
 
@@ -82,7 +84,7 @@ h1::before {
 }
 
 .navbar li {
-    margin-top:35px;
+    margin-top:15px;
     font-family:'Poppins', 'Montserrat', 'Roboto';
     font-size:30px;
     float:right;
@@ -112,7 +114,18 @@ h1::before {
             h   e   r   o
 ======================================*/
 
+@keyframes hero{
+    from{
+        transform: translateY(-160px);
+    }
+    to{
+        opacity:100%;
+        transform: translateY(0);
+    }
+}
+
 .hero {
+    z-index:1;
     margin:0;
     background-image:url(../img/bear3.png);
     background-blend-mode:none;
@@ -127,6 +140,8 @@ h1::before {
     color:black;
     clip-path:ellipse(120% 90% at 50% 10%);
     box-shadow: 0px 7px 20px -15px rgb(25, 23, 151) inset;
+    animation: hero 1s ease-in-out;
+    z-index:-1;
 }
 
 .rating {
